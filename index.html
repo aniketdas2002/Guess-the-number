@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Wesbite</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <h1 class="title" id="idtitle">How lucky you are ??</h1>
-        <p class="between">(Between 1 and 20)</p>
-        <input class="btn again" id="again" type="button" value="Restart" onclick="window.location.reload(true)">
-        <div class="number">?</div>
+        <input type="reset" value="Restart" onclick="window.location.reload(true)">
+        <h1>Let's Play - How lucky you are ???</h1>
+        <p class="range">(Between 0 and 20)</p>
+        <div class="box">?</div>
     </header>
     <main id="main">
+
         <section class="left">
-            <input type="number" class="guess" id="guessing">
-            <button class="btn checkbtn" id="check">Check!</button>
+            <input type="number" name="" class="guess">
+            <button type="button" id="check">Check!</button>
         </section>
+
         <section class="right">
-            <p class="message" id="message">Please enter a number between 0 and 20</p>
+            <p class="message">Please Enter a number between 0 and 20</p>
             <p class="label-score">
-                Score : 
-                <span class="score" id="score">9</span>
+                Your Score :
+                <span class="score">10</span>
             </p>
             <p class="label-highscore">
-                Highscore : 
-                <span class="highscore" id="highscore">0</span>
+                Highscore :
+                <span>10</span>
             </p>
         </section>
     </main>
     
-       <script src="index.js"></script> 
+    <script src="index.js"></script>
+
 </body>
+
 </html>
