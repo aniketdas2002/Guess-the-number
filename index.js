@@ -12,7 +12,6 @@ const scoreSection = document.querySelector(".score");
 const ls = document.querySelector(".label-score");
 const ls1 = document.querySelector(".label-highscore");
 
-
 const win_message = "Wow! You guessed right! , Congrats!!!!";
 const high_message = "Your guess is too high!!!";
 const low_message = "Your guess is too low!!!";
@@ -21,7 +20,9 @@ const outofrange = "Please enter a number between 0 and 20 !!!";
 const checkFunction = () => {
   const userGuess = Number(userInput.value);
   
-  if (userGuess >= 20 || userGuess <= -1) {
+  if(userGuess == ""){
+    message.textContent = outofrange;
+  }else if (userGuess >= 20 || userGuess <= -1) {
     message.textContent = outofrange;
 
   }else{
