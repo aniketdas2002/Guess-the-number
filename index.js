@@ -1,4 +1,4 @@
-const random = Math.floor(Math.random() * 20);
+const random = (Math.floor(Math.random() * 19)) + 1 ;
 // console.log(random);
 
 let score = 10;
